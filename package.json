@@ -1,0 +1,53 @@
+{
+  "name": "fxbaogao",
+  "version": "2.1.0",
+  "description": "fxbaogao",
+  "main": "./main/app.js",
+  "scripts": {
+    "start": "electron ./main",
+    "build_mac": "electron-builder -m",
+    "build_window": "electron-builder -w",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "electron",
+    "tab",
+    "tabs",
+    "webview"
+  ],
+  "build": {
+    "appId": "com.fxbaogao.app",
+    "productName": "发现报告",
+    "directories": {
+      "output": "../dist"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "allowElevation": true,
+      "runAfterFinish": true,
+      "createDesktopShortcut": true,
+      "shortcutName": "发现报告"
+    },
+    "win": {
+      "icon": "favicon.ico",
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ]
+    },
+    "mac": {
+      "icon": "icon.png"
+    }
+  },
+  "author": "HeToNG",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "electron": "^11.2.2"
+  }
+}

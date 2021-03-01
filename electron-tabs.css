@@ -1,0 +1,217 @@
+.etabs-tabgroup {
+  width: 100%;
+  height: 32px;
+  background-color: #ccc;
+  cursor: default;
+  font: caption;
+  font-size: 14px;
+  -webkit-user-select: none;
+  user-select: none;
+  position: fixed;
+  top: 35px;
+  z-index: 3;
+  display: none;
+}
+.etabs-tabgroup.visible {
+  display: block;
+}
+.etabs-tabs {
+  display: flex;
+  height: 32px !important;
+}
+.etabs-tabs > div {
+  flex: 1 1 auto;
+}
+.etabs-tab {
+  display: none;
+  position: relative;
+  color: #333;
+  height: 32px;
+  background: #e4e4e4;
+  font: caption;
+  font-size: 14px;
+  background-color: #ccc;
+  cursor: default;
+  text-align: center;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+/* .etabs-tab > * {
+  position: absolute;
+  top: calc();
+} */
+/* Dragula */
+.etabs-tab.gu-mirror {
+  padding-bottom: 0;
+}
+
+/* .etabs-tab:first-child {
+  border-left: none;
+} */
+
+.etabs-tab.visible {
+  display: inline-block;
+}
+
+.etabs-tab.active {
+  background: #f4f4f4;
+  position: relative;
+}
+
+.etabs-tab.flash {
+  background: linear-gradient(to bottom, rgba(255,243,170,1) 0%,rgba(255,227,37,1) 100%);
+}
+
+/* .etabs-buttons {
+  float: left;
+}
+
+.etabs-buttons button {
+  float: left;
+  color: #333;
+  background: none;
+  border: none;
+  font-size: 12px;
+  margin-top: 6px;
+  border-radius: 2px;
+  margin-left: 4px;
+  width: 20px;
+  text-align: center;
+  padding: 4px 0;
+}
+
+.etabs-buttons button:hover {
+  color: #eee;
+  background-color: #aaa;
+} */
+
+.etabs-tab-badge {
+  position: absolute;
+  right: 0;
+  top: -7px;
+  background: red;
+  border-radius: 100%;
+  text-align: center;
+  font-size: 10px;
+  padding: 0 5px;
+}
+
+.etabs-tab-badge.hidden {
+  display: none;
+}
+
+.etabs-tab-title {
+  display: inline-block;
+  /* margin-left: 10px; */
+  height: 20px;
+  width: 90%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.etabs-tab-icon {
+  position: absolute;
+  left: 10px;
+  cursor: pointer;
+}
+.etabs-tab-icon span {
+  display: none;
+  width: 15px;
+  height: 15px;
+}
+.etabs-tab:hover > .etabs-tab-icon span {
+  display: block;
+}
+.etabs-tab:hover {
+  background-color: #f4f4f4;
+}
+/* .etabs-tab-buttons {
+  display: inline-block;
+  margin-left: 10px;
+  position: absolute;
+  right: 0;
+}
+
+.etabs-tab-buttons button {
+  display: inline-block;
+  color: #333;
+  background: none;
+  border: none;
+  width: 20px;
+  text-align: center;
+  border-radius: 2px;
+}
+
+.etabs-tab-buttons button:hover {
+  color: #eee;
+  background-color: #aaa;
+} */
+
+.etabs-views {
+  position: relative;
+  border-top: 1px solid #aaa;
+  height: calc(100vh - 33px);
+}
+
+.etab-view {
+  position: relative;
+}
+.title {
+  position: fixed;
+  width: 100%;
+  height: 40px;
+  top: 0;
+  background: linear-gradient(180deg, #F8F8F8 0%, #F4F4F4 100%);
+  /* 使标题栏可以被拖动 */
+  -webkit-app-region: drag;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+}
+.hiden {
+  display: none;
+}
+.title > div:first-child {
+  width: 50px;
+  margin-left: 70px;
+  padding: 0 20px;
+}
+
+.go {
+  transform:rotate(180deg);
+}
+.disable {
+  color: #999;
+}
+.title a {
+  width: 30px;
+}
+.title > div:last-child {
+  width: 100px;
+  padding: 0 20px;
+}
+.title > div:last-child > a {
+  width: 40px;
+}
+.title div {
+  display: flex;
+  justify-content: space-around;
+  height: 20px;
+}
+
+.enterFs {
+  margin-left: 0 !important;
+}
+.etabs-views {
+  margin-top: 40px;
+}
+.tabShow {
+  margin-top: 67px;
+}
+.etabs-tab-buttons {
+  display: none !important;
+}
+.etabs-tab > a:hover {
+  cursor: pointer;
+}

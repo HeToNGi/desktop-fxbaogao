@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>发现报告</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../electron-tabs.css">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body style="margin:0">
+    <div class="title" ondblclick="onDbClick(event)">
+      <div class="goAndBack">
+        <a class="back disable" onclick ="onBack()">
+          <span class="icon-houtui"></span>
+        </a>
+        <a class="go disable" onclick ="onGo()">
+          <span class="icon-houtui"></span>
+        </a>
+      </div>
+      <div>
+        <a onclick ="onHomePage()">
+          <span class="icon-shouye"></span>
+        </a>
+        <a onclick ="onRefresh()">
+          <span class="icon-shuaxin"></span>
+        </a>
+        <a class="close disable" onclick ="onStopLoad()">
+          <span class="icon-close"></span>
+        </a>
+      </div>
+    </div>
+    <div class="etabs-tabgroup">
+      <div class="etabs-tabs"></div>
+    </div>
+    <div class="etabs-views"></div>
+    <script type="text/javascript" src="./index.js" ></script>
+  </body>
+</html>
